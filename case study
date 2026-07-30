@@ -1,0 +1,530 @@
+"""
+Qualitative analysis for the SLAKE-finetuned Q-FSRU checkpoint.
+
+Fixes the duplicate-example bug present in the previous version: the same
+image-question pair could appear in both the "case study" (FSRU helps) and
+"failure case" (FSRU hurts) figures, because each figure ran its own
+independent decode() calls over the model. Two separate forward passes are
+not guaranteed to be bit-identical on GPU (cuDNN algorithm selection, TF32
+matmuls, and non-deterministic reduction order in attention/convolution
+kernels can all perturb logits by a tiny amount), so a borderline example
+could be scored "correct" in one pass and "incorrect" in the other, letting
+it satisfy both the success predicate and the failure predicate across the
+two separate runs.
+
+The fix: run inference exactly ONCE per example, cache predictions keyed by
+a stable id, and partition that single cache into disjoint success/failure
+sets. Determinism flags are also set explicitly so repeated full runs of
+this script reproduce the same figures.
+"""
+
+import os
+import textwrap
+import numpy as np
+import torch
+import matplotlib.pyplot as plt
+
+
+# ------------------------------------------------------------
+# 0. DETERMINISM
+# ------------------------------------------------------------
+SEED = 42
+
+
+def set_full_determinism(seed: int = SEED):
+    import random
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    # Also disable TF32, which trades a small amount of precision for speed
+    # on Ampere+ GPUs and is a common source of run-to-run drift.
+    torch.backends.cuda.matmul.allow_tf32 = False
+    torch.backends.cudnn.allow_tf32 = False
+    try:
+        torch.use_deterministic_algorithms(True, warn_only=True)
+    except TypeError:
+        torch.use_deterministic_algorithms(True)
+
+
+set_full_determinism(SEED)
+
+
+# ------------------------------------------------------------
+# 1. SETUP — load the SLAKE-finetuned checkpoint (single source of truth)
+# ------------------------------------------------------------
+CHECKPOINT_PATH = "/content/drive/MyDrive/qfsru_checkpoints/slake_finetune_seed2024/best_finetune.pt"
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+assert os.path.exists(CHECKPOINT_PATH), (
+    f"Checkpoint not found at {CHECKPOINT_PATH} - check that Drive is mounted "
+    f"(drive.mount('/content/drive')) and the path is correct."
+)
+
+print(f"[checkpoint] Loading: {CHECKPOINT_PATH}")
+checkpoint = torch.load(CHECKPOINT_PATH, map_location=device)
+
+ckpt_cfg = checkpoint.get("config", {})
+print(f"[checkpoint] epoch={checkpoint.get('epoch')}  val_loss={checkpoint.get('val_loss')}")
+print(f"[checkpoint] config.dataset_name={ckpt_cfg.get('dataset_name')}  "
+      f"training_stage={ckpt_cfg.get('training_stage')}")
+
+if ckpt_cfg.get("dataset_name") not in (None, "slake"):
+    print(f"WARNING: checkpoint's own config.dataset_name is "
+          f"'{ckpt_cfg.get('dataset_name')}', not 'slake'. The path name suggests "
+          f"SLAKE, but the saved config disagrees, verify this is the right file "
+          f"before trusting downstream results.")
+
+args = Config(**ckpt_cfg)
+args.device = device
+args.dataset_name = "slake"
+args.training_stage = ckpt_cfg.get("training_stage", "stage1")
+args.seed = SEED
+
+from transformers import AutoTokenizer
+args._tokenizer = AutoTokenizer.from_pretrained(args.text_backbone)
+if args._tokenizer.pad_token is None:
+    args._tokenizer.add_special_tokens({"pad_token": "<pad>"})
+args.vocab_size = len(args._tokenizer)
+
+model = QFSRUModel(args).to(device)
+args._image_preprocess = model.vision_encoder.processor
+
+model_sd = model.state_dict()
+ckpt_sd = checkpoint["model_state_dict"]
+filtered_sd = {k: v for k, v in ckpt_sd.items() if k in model_sd and v.shape == model_sd[k].shape}
+skipped = [k for k in ckpt_sd if k not in filtered_sd]
+if skipped:
+    print(f"WARNING: skipped {len(skipped)} mismatched key(s) on load: "
+          f"{skipped[:10]}{'...' if len(skipped) > 10 else ''}")
+loaded_frac = len(filtered_sd) / max(len(ckpt_sd), 1)
+print(f"[checkpoint] loaded {len(filtered_sd)}/{len(ckpt_sd)} tensors ({loaded_frac:.1%})")
+assert loaded_frac > 0.9, "Fewer than 90% of checkpoint weights loaded, likely wrong checkpoint/architecture mismatch."
+
+model.load_state_dict(filtered_sd, strict=False)
+model.eval()
+for p in model.parameters():
+    p.requires_grad = False
+
+# Enable debug capture inside FSRU for the spectrum/t-SNE plots below
+model.fsru._capture_debug = True
+
+# Build the SLAKE val dataloader deterministically (shuffle=False for val)
+dataloaders = get_dataloaders(args)
+val_loader = dataloaders["val"]
+
+n_samples = len(val_loader.dataset)
+assert n_samples > 0, "val_loader.dataset is empty - SLAKE val split failed to load."
+print(f"[data] SLAKE val split: {n_samples} samples")
+
+sample_item = val_loader.dataset.data[0]
+resolved_path = val_loader.dataset._resolve_image_path(sample_item)
+print(f"[data] sample image path: {resolved_path}")
+assert resolved_path is not None and os.path.exists(resolved_path), (
+    "Could not resolve a real image file on disk for the first SLAKE val sample - "
+    "check args.slake_image_root."
+)
+print("[data] confirmed real SLAKE image on disk, not dummy data")
+
+
+# ------------------------------------------------------------
+# 2. DETERMINISTIC DECODE
+# ------------------------------------------------------------
+@torch.no_grad()
+def decode_fn(model, images, question_ids, question_mask, question_texts):
+    """Deterministic beam-search decode. do_sample is always False inside
+    model.generate() (see model.py), this wrapper just documents that
+    contract at the call site."""
+    return model.generate(
+        images=images,
+        question_ids=question_ids,
+        question_mask=question_mask,
+        max_length=args.max_answer_len,
+        question_texts=question_texts,
+    )
+
+
+def _normalize(text: str) -> str:
+    return str(text).strip().lower()
+
+
+def _zero_visual_fsru_hook(n_img_tokens):
+    def _hook(module, inp, out):
+        out = out.clone()
+        out[:, :n_img_tokens, :] = 0.0
+        return out
+    return _hook
+
+
+# ------------------------------------------------------------
+# 3. SINGLE-PASS PREDICTION COLLECTION (the actual bug fix)
+# ------------------------------------------------------------
+@torch.no_grad()
+def collect_predictions(model, dataloader, device, max_examples=None):
+    """
+    Runs inference on every validation example EXACTLY ONCE, both with and
+    without the FSRU visual contribution, and caches the results keyed by a
+    stable unique id (flat dataset index, plus image path + question text
+    for a human-readable cross-check).
+
+    Returns a dict: unique_id -> record, where record contains everything
+    needed for both plotting and correctness classification. Because both
+    case-study and failure selection draw from this single cache, no
+    example can ever be inferred twice, and the two predicates
+    (full_correct and not ablated_correct) vs (not full_correct and
+    ablated_correct) are mutually exclusive by construction, so the
+    resulting success/failure sets are guaranteed disjoint.
+    """
+    model.eval()
+    n_img_tokens = model.vision_encoder.num_tokens
+
+    records = {}
+    flat_idx = 0
+    seen_keys = set()
+    duplicate_keys = []
+
+    for batch in dataloader:
+        images = batch["images"].to(device)
+        question_ids = batch["question_ids"].to(device)
+        question_mask = batch["question_mask"].to(device)
+        gt_answers = batch.get("answer_texts", batch.get("answers"))
+        if gt_answers is None:
+            raise KeyError(
+                "Batch has neither 'answer_texts' nor 'answers', check the "
+                "SLAKE dataset __getitem__ / collate_fn key name."
+            )
+
+        # Full model prediction
+        pred_full = decode_fn(model, images, question_ids, question_mask, batch["question_texts"])
+
+        # Ablated prediction: zero out the visual FSRU contribution via a
+        # forward hook on fsru_to_text, then restore immediately after.
+        handle = model.fsru_to_text.register_forward_hook(_zero_visual_fsru_hook(n_img_tokens))
+        pred_ablated = decode_fn(model, images, question_ids, question_mask, batch["question_texts"])
+        handle.remove()
+
+        for i in range(images.size(0)):
+            question_text = batch["question_texts"][i]
+            gt = _normalize(gt_answers[i])
+            full_pred_norm = _normalize(pred_full[i])
+            ablated_pred_norm = _normalize(pred_ablated[i])
+
+            image_item = dataloader.dataset.data[dataloader.dataset.valid_indices[flat_idx]]
+            image_path = dataloader.dataset._resolve_image_path(image_item)
+
+            unique_key = f"{image_path}||{question_text}"
+            if unique_key in seen_keys:
+                duplicate_keys.append(unique_key)
+            seen_keys.add(unique_key)
+
+            records[flat_idx] = {
+                "dataset_index": flat_idx,
+                "unique_key": unique_key,
+                "image": images[i].cpu(),
+                "image_path": image_path,
+                "question": question_text,
+                "ground_truth": gt_answers[i],
+                "pred_with_fsru": pred_full[i],
+                "pred_without_fsru": pred_ablated[i],
+                "full_correct": full_pred_norm == gt,
+                "ablated_correct": ablated_pred_norm == gt,
+            }
+            flat_idx += 1
+
+        if max_examples is not None and flat_idx >= max_examples:
+            break
+
+    if duplicate_keys:
+        print(f"WARNING: {len(duplicate_keys)} duplicate (image, question) keys "
+              f"encountered while scanning the dataloader itself (unrelated to "
+              f"the success/failure split): {duplicate_keys[:5]}")
+    else:
+        print("[collect_predictions] no duplicate (image, question) pairs found in the scanned data")
+
+    n_full_correct = sum(r["full_correct"] for r in records.values())
+    n_ablated_correct = sum(r["ablated_correct"] for r in records.values())
+    print(f"[collect_predictions] scanned {len(records)} examples | "
+          f"full model correct: {n_full_correct} | ablated model correct: {n_ablated_correct}")
+
+    return records
+
+
+def select_disjoint_success_and_failure(records, top_k=6):
+    """
+    Partitions the single prediction cache into disjoint success and
+    failure example sets.
+
+    Success: FSRU (full model) is correct AND the ablated model is wrong.
+    Failure: FSRU (full model) is wrong AND the ablated model is correct.
+
+    These predicates are mutually exclusive for any single record, so the
+    two returned lists are disjoint by construction. We additionally assert
+    this explicitly before returning, so any future refactor that breaks
+    the invariant fails loudly instead of silently producing duplicates.
+    """
+    success = [r for r in records.values() if r["full_correct"] and not r["ablated_correct"]]
+    failure = [r for r in records.values() if (not r["full_correct"]) and r["ablated_correct"]]
+
+    success_ids = {r["dataset_index"] for r in success}
+    failure_ids = {r["dataset_index"] for r in failure}
+    overlap = success_ids & failure_ids
+    assert not overlap, (
+        f"Success and failure sets overlap on dataset indices {overlap}. "
+        f"This should be mathematically impossible given the predicates used; "
+        f"if this fires, check that 'records' was not mutated between calls."
+    )
+
+    print(f"[selection] candidate successes: {len(success)} | candidate failures: {len(failure)}")
+
+    success = success[:top_k]
+    failure = failure[:top_k]
+
+    print(f"[selection] selected success dataset indices: {[r['dataset_index'] for r in success]}")
+    print(f"[selection] selected failure dataset indices: {[r['dataset_index'] for r in failure]}")
+
+    # Final, authoritative disjointness check on the actually-selected sets
+    selected_success_keys = {r["unique_key"] for r in success}
+    selected_failure_keys = {r["unique_key"] for r in failure}
+    final_overlap = selected_success_keys & selected_failure_keys
+    assert not final_overlap, (
+        f"Selected success and failure examples overlap: {final_overlap}"
+    )
+    print("[selection] verified: success and failure example sets are disjoint")
+
+    return success, failure
+
+
+# ------------------------------------------------------------
+# 4. HIGH-READABILITY PLOTTING (AAAI-ready)
+# ------------------------------------------------------------
+def _wrap(text, width=42):
+    return "\n".join(textwrap.wrap(str(text), width=width))
+
+
+def plot_examples(cases, title, save_path, ncols_max=3):
+    """
+    Each example gets its OWN pair of axes: one for the image, one purely
+    for the caption text below it. Using ax.set_title() for a long,
+    multi-line caption is fragile, the title's height depends on font size
+    and wrap width, and if it grows taller than the reserved hspace it
+    bleeds into the image above it (this was the cause of the text/image
+    overlap in the previous version). A dedicated text-only axes has no
+    such failure mode: its height is fixed by the GridSpec row, and text
+    that would overflow it is simply clipped inside that row rather than
+    drawn on top of the neighboring image.
+    """
+    n = len(cases)
+    assert n > 0, f"No cases to plot for '{title}'."
+
+    ncols = min(n, ncols_max)
+    nrows = int(np.ceil(n / ncols))
+
+    # Two GridSpec rows per example row: image row, then caption row.
+    # height_ratios controls how much vertical space each gets.
+    fig = plt.figure(figsize=(5.2 * ncols, 5.0 * nrows))
+    gs = fig.add_gridspec(
+        nrows=2 * nrows,
+        ncols=ncols,
+        height_ratios=[3.2, 2.0] * nrows,
+        hspace=0.15,
+        wspace=0.35,
+    )
+
+    for idx, case in enumerate(cases):
+        pair_row, c = divmod(idx, ncols)
+        img_ax = fig.add_subplot(gs[2 * pair_row, c])
+        txt_ax = fig.add_subplot(gs[2 * pair_row + 1, c])
+
+        img = case["image"].permute(1, 2, 0).numpy()
+        img = (img - img.min()) / (img.max() - img.min() + 1e-8)
+        img_ax.imshow(img)
+        img_ax.axis("off")
+
+        caption = (
+            f"Q: {_wrap(case['question'], 34)}\n\n"
+            f"GT: {_wrap(case['ground_truth'], 34)}\n"
+            f"With FSRU: {_wrap(case['pred_with_fsru'], 34)}\n"
+            f"Without FSRU: {_wrap(case['pred_without_fsru'], 34)}"
+        )
+        txt_ax.axis("off")
+        txt_ax.text(
+            0.0, 1.0, caption,
+            transform=txt_ax.transAxes,
+            fontsize=12.5,
+            ha="left", va="top",
+            linespacing=1.4,
+        )
+
+    # Hide any unused axes pairs
+    for idx in range(n, nrows * ncols):
+        pair_row, c = divmod(idx, ncols)
+        fig.add_subplot(gs[2 * pair_row, c]).axis("off")
+        fig.add_subplot(gs[2 * pair_row + 1, c]).axis("off")
+
+    fig.suptitle(title, fontsize=15, y=0.995)
+    plt.savefig(save_path, dpi=300, bbox_inches="tight")
+    plt.show()
+    print(f"Saved: {save_path}")
+
+
+# ------------------------------------------------------------
+# 5. 2D FREQUENCY-DOMAIN SPECTRUM (unchanged logic, uses the same model)
+# ------------------------------------------------------------
+@torch.no_grad()
+def plot_frequency_spectrum(model, dataloader, device, sample_idx=0, n_examples=3,
+                             save_path="fsru_frequency_spectrum.png"):
+    model.eval()
+    fig, axes = plt.subplots(n_examples, 3, figsize=(11, 3.3 * n_examples))
+    if n_examples == 1:
+        axes = axes[None, :]
+
+    it = iter(dataloader)
+    for row in range(n_examples):
+        batch = next(it)
+        images = batch["images"].to(device)
+        question_ids = batch["question_ids"].to(device)
+        question_mask = batch["question_mask"].to(device)
+        answer_ids = batch["answer_ids"].to(device)
+
+        _ = model(images=images, question_ids=question_ids, question_mask=question_mask,
+                   answer_ids=answer_ids, question_texts=batch["question_texts"])
+
+        pre = model.fsru._debug_img_pre_fft[sample_idx]
+        post = model.fsru._debug_img_post_fft[sample_idx].reshape(14, 14, -1)
+
+        pre_np = pre.mean(dim=-1).cpu().numpy()
+        post_np = post.mean(dim=-1).cpu().numpy()
+
+        pre_spec = np.log1p(np.abs(np.fft.fftshift(np.fft.fft2(pre_np))))
+        post_spec = np.log1p(np.abs(np.fft.fftshift(np.fft.fft2(post_np))))
+        diff_spec = post_spec - pre_spec
+
+        axes[row, 0].imshow(pre_spec, cmap="viridis")
+        axes[row, 0].set_title("Input spectrum (log-mag)" if row == 0 else "")
+        axes[row, 1].imshow(post_spec, cmap="viridis")
+        axes[row, 1].set_title("Filtered spectrum (log-mag)" if row == 0 else "")
+        im2 = axes[row, 2].imshow(diff_spec, cmap="coolwarm",
+                                   vmin=-np.abs(diff_spec).max(), vmax=np.abs(diff_spec).max())
+        axes[row, 2].set_title("Delta (red=amplified, blue=suppressed)" if row == 0 else "")
+        for ax in axes[row]:
+            ax.axis("off")
+
+    fig.colorbar(im2, ax=axes[:, 2], shrink=0.7, label="log-magnitude delta")
+    plt.suptitle("FSRU learned frequency response, SLAKE (center = low freq, edges = high freq)")
+    plt.savefig(save_path, dpi=300, bbox_inches="tight")
+    plt.show()
+    print(f"Saved: {save_path}")
+
+
+# ------------------------------------------------------------
+# 6. EMBEDDING-SPACE VISUALIZATION (t-SNE, unchanged logic)
+# ------------------------------------------------------------
+@torch.no_grad()
+def plot_embedding_tsne(model, dataloader, device, n_batches=15,
+                         save_path="fsru_tsne.png", perplexity=30):
+    from sklearn.manifold import TSNE
+
+    model.eval()
+    pre_feats, post_feats, labels = [], [], []
+
+    for step, batch in enumerate(dataloader):
+        if step >= n_batches:
+            break
+        images = batch["images"].to(device)
+        question_ids = batch["question_ids"].to(device)
+        question_mask = batch["question_mask"].to(device)
+        answer_ids = batch["answer_ids"].to(device)
+
+        _ = model(images=images, question_ids=question_ids, question_mask=question_mask,
+                   answer_ids=answer_ids, question_texts=batch["question_texts"])
+
+        pre = model.fsru._debug_img_pre_fft.mean(dim=(1, 2))
+        post = model.fsru._debug_img_post_fft.mean(dim=1)
+
+        pre_feats.append(pre.cpu().numpy())
+        post_feats.append(post.cpu().numpy())
+        if "answer_type" in batch:
+            labels.extend(list(batch["answer_type"]))
+        elif "answer_types" in batch:
+            labels.extend(list(batch["answer_types"]))
+
+    pre_feats = np.concatenate(pre_feats)
+    post_feats = np.concatenate(post_feats)
+    labels = np.array(labels) if labels else np.zeros(len(pre_feats))
+    print(f"[t-SNE] pooled {len(pre_feats)} real SLAKE val samples")
+
+    pre_2d = TSNE(n_components=2, perplexity=perplexity, random_state=SEED).fit_transform(pre_feats)
+    post_2d = TSNE(n_components=2, perplexity=perplexity, random_state=SEED).fit_transform(post_feats)
+
+    fig, axes = plt.subplots(1, 2, figsize=(11, 5))
+    for lbl in sorted(set(labels.tolist())):
+        mask = labels == lbl
+        axes[0].scatter(pre_2d[mask, 0], pre_2d[mask, 1], s=8, label=str(lbl), alpha=0.6)
+        axes[1].scatter(post_2d[mask, 0], post_2d[mask, 1], s=8, label=str(lbl), alpha=0.6)
+    axes[0].set_title("Pre-FFT image token embeddings (SLAKE)")
+    axes[1].set_title("Post-FFT image token embeddings (SLAKE)")
+    axes[1].legend(fontsize=8, loc="best")
+    for ax in axes:
+        ax.set_xticks([]); ax.set_yticks([])
+    plt.tight_layout()
+    plt.savefig(save_path, dpi=300, bbox_inches="tight")
+    plt.show()
+    print(f"Saved: {save_path}")
+
+
+# ------------------------------------------------------------
+# 7. MAIN
+# ------------------------------------------------------------
+if __name__ == "__main__" or True:
+    print("=" * 70)
+    print("Pre-flight checks")
+    print("=" * 70)
+    print(f"Checkpoint used for ALL analyses: {CHECKPOINT_PATH}")
+    print(f"Dataloader used for ALL analyses: SLAKE val split, {n_samples} samples, shuffle=False")
+    print("Inference mode: model.eval(), do_sample=False (deterministic beam search)")
+    print("cudnn.deterministic=True, cudnn.benchmark=False, TF32 disabled")
+    print("=" * 70)
+
+    plot_frequency_spectrum(model, val_loader, device, n_examples=3)
+
+    print("\n" + "=" * 70)
+    print("Collecting predictions (single pass, no re-inference)")
+    print("=" * 70)
+    predictions = collect_predictions(model, val_loader, device, max_examples=None)
+
+    success_cases, failure_cases = select_disjoint_success_and_failure(predictions, top_k=6)
+
+    if success_cases:
+        plot_examples(
+            success_cases,
+            title="Case Studies: FSRU Improves the Prediction",
+            save_path="fsru_case_studies.png",
+        )
+    else:
+        print("No success cases found in the scanned validation set.")
+
+    if failure_cases:
+        plot_examples(
+            failure_cases,
+            title="Failure Cases: FSRU Degrades the Prediction",
+            save_path="fsru_failure_cases.png",
+        )
+    else:
+        print("No failure cases found in the scanned validation set.")
+
+    plot_embedding_tsne(model, val_loader, device)
+
+    print("\n" + "=" * 70)
+    print("Summary")
+    print("=" * 70)
+    print(f"Total examples scanned: {len(predictions)}")
+    print(f"Success examples plotted: {len(success_cases)}")
+    print(f"Failure examples plotted: {len(failure_cases)}")
+    overlap_check = (
+        {c["unique_key"] for c in success_cases} & {c["unique_key"] for c in failure_cases}
+    )
+    print(f"Overlap between plotted sets: {len(overlap_check)} (must be 0)")
+    assert len(overlap_check) == 0
