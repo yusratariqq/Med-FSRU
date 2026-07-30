@@ -1,0 +1,7440 @@
+{
+  "overall_em": 0.700282752120641,
+  "open_em": 0.6945736434108527,
+  "closed_em": 0.7091346153846154,
+  "overall_f1": 0.7366227394973859,
+  "open_f1": 0.7543515141189557,
+  "closed_f1": 0.7091346153846154,
+  "total": 1061,
+  "total_open": 645,
+  "total_closed": 416,
+  "per_sample": [
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung, spinal cord",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung cancer",
+      "gt": "lung cancer",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left lung, right",
+      "gt": "left lung, right",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung cancer",
+      "gt": "lung cancer",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "right lung, left",
+      "gt": "left lung, right",
+      "em": false,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung cancer",
+      "gt": "lung cancer",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "right lung, left",
+      "gt": "right lung, left",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "atelectasis",
+      "gt": "cardiomegaly",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "center",
+      "gt": "center",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "pneumonia",
+      "gt": "pneumonia",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left lung, right",
+      "gt": "left lung, lower right",
+      "em": false,
+      "f1": 0.8571,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "xray",
+      "gt": "x-ray",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "nodule",
+      "gt": "cardiomegaly",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "center",
+      "gt": "center",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "xray",
+      "gt": "x-ray",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "atelectasis",
+      "gt": "cardiomegaly",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "center",
+      "gt": "center",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "atelectasis",
+      "gt": "atelectasis, mass",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung, left",
+      "gt": "right lung",
+      "em": false,
+      "f1": 0.4,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "atelectasis",
+      "gt": "cardiomegaly",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung, left",
+      "gt": "center",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "heart",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "atelectasis",
+      "gt": "cardiomegaly",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "left lung, right",
+      "gt": "center",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "heart",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "nodule",
+      "gt": "nodule",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung, left",
+      "gt": "left lung, right",
+      "em": false,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "heart",
+      "gt": "lung",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "xray",
+      "gt": "x-ray",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "nodule",
+      "gt": "nodule",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung, left",
+      "gt": "right lung, left",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "atelectasis",
+      "gt": "atelectasis",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "center",
+      "gt": "right lung, lower left",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "heart",
+      "gt": "lung",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "pneumonia",
+      "gt": "pneumonia",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left lung, right",
+      "gt": "left lung, right",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "both",
+      "gt": "lung",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "spine",
+      "gt": "abdomen",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "1",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "pleural effusion",
+      "gt": "pneumothorax",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung, left",
+      "gt": "right lung, left",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left",
+      "gt": "left",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "stomach",
+      "gt": "left kidney",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "4",
+      "gt": "4",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lower left",
+      "gt": "top",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left lung",
+      "gt": "left lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung",
+      "gt": "right lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left",
+      "gt": "left",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "0",
+      "gt": "0",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "stomach",
+      "gt": "spleen",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver cancer",
+      "gt": "liver cancer",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left",
+      "gt": "left and top",
+      "em": false,
+      "f1": 0.5,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "0",
+      "gt": "0",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "spleen",
+      "gt": "liver",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "spleen",
+      "gt": "spleen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left",
+      "gt": "left and top",
+      "em": false,
+      "f1": 0.5,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "0",
+      "gt": "2",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "spleen",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "spleen",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t1",
+      "gt": "t1",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "0",
+      "gt": "0",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t1",
+      "gt": "t1",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left",
+      "gt": "not seen",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "0",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung",
+      "gt": "lung",
+      "em": false,
+      "f1": 0.6667,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "lung",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver cancer",
+      "gt": "liver cancer",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left",
+      "gt": "upper left",
+      "em": false,
+      "f1": 0.6667,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "0",
+      "gt": "0",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung",
+      "gt": "right lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart and liver",
+      "em": false,
+      "f1": 0.5,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "pleural effusion",
+      "gt": "pulmonary bronchus",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "upper left",
+      "gt": "symmetrical to bone marrow",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver cancer",
+      "gt": "liver cancer",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "0",
+      "gt": "2",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "spleen",
+      "gt": "spleen",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "irregular",
+      "gt": "irregular",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "symmetrical to bone marrow",
+      "gt": "symmetrical to bone marrow",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left",
+      "gt": "left",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung",
+      "gt": "right lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "pleural effusion",
+      "gt": "pulmonary bronchus",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "small bowel",
+      "gt": "small bowel",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "large bowel",
+      "gt": "large bowel",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "small bowel",
+      "gt": "large bowel",
+      "em": false,
+      "f1": 0.5,
+      "type": "open"
+    },
+    {
+      "pred": "small bowel",
+      "gt": "small bowel",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "symmetrical to spine",
+      "gt": "symmetrical to bone marrow",
+      "em": false,
+      "f1": 0.5714,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left lung",
+      "gt": "large bowel",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung",
+      "gt": "right lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "stomach",
+      "gt": "stomach",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "stomach",
+      "gt": "large bowel",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "0",
+      "gt": "0",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left lung",
+      "gt": "large bowel",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung",
+      "gt": "right lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "stomach",
+      "gt": "large bowel",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "x-ray",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "coronal plane",
+      "gt": "coronal plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right",
+      "gt": "right",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "upper right lung",
+      "em": false,
+      "f1": 0.3333,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest tightness, fatigue",
+      "gt": "chest pain, dyspnea",
+      "em": false,
+      "f1": 0.3333,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "x-ray",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lung",
+      "gt": "lower right lung",
+      "em": false,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "lower right lung",
+      "gt": "lower right lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "cardiomegaly",
+      "gt": "atelectasis",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "pulmonary infection, tuberculosis and other diseases",
+      "gt": "bronchial obstruction",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left",
+      "gt": "left",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "upper left lung",
+      "gt": "lower left lung",
+      "em": false,
+      "f1": 0.6667,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "pneumothorax",
+      "gt": "pulmonary mass",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "1",
+      "gt": "1",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "acanth",
+      "gt": "little",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "live healthy, enhance physical performance",
+      "gt": "keep healthy",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "lower left lung",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "lower left lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "much",
+      "gt": "little",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "medical treatment, surgical treatment",
+      "gt": "physical therapy, surgical treatment",
+      "em": false,
+      "f1": 0.5,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "coronal plane",
+      "gt": "coronal plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right",
+      "gt": "right",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lower right lung",
+      "gt": "right lung",
+      "em": false,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "pneumothorax",
+      "gt": "pneumonia",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "medical treatment",
+      "gt": "medical therapy, supportive therapy",
+      "em": false,
+      "f1": 0.3333,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "coronal plane",
+      "gt": "coronal plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "heart",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "cardiomegaly",
+      "gt": "cardiomegaly",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest tightness, dyspnea, chest pain",
+      "gt": "chest tightness, arrhythmia",
+      "em": false,
+      "f1": 0.5,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left",
+      "gt": "left",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "lower left lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "nodule",
+      "gt": "pulmonary infiltration",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "live healthy, enhance physical performance",
+      "gt": "live healthy, enhance physical fitness",
+      "em": false,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "xray",
+      "gt": "x-ray",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "coronal plane",
+      "gt": "coronal plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "lower left lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "lower left lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "medical treatment, surgical treatment",
+      "gt": "medical treatment, surgical treatment",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "x-ray",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "coronal plane",
+      "gt": "coronal plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left lung, right",
+      "gt": "upper right lung",
+      "em": false,
+      "f1": 0.3333,
+      "type": "open"
+    },
+    {
+      "pred": "upper left lung",
+      "gt": "upper right lung",
+      "em": false,
+      "f1": 0.6667,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest tightness, dyspnea, chest pain",
+      "gt": "chest tightness, fatigue",
+      "em": false,
+      "f1": 0.5,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "upper left lung",
+      "gt": "upper left lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "upper left lung",
+      "em": false,
+      "f1": 0.6667,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "much",
+      "gt": "little",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "medical treatment, surgical treatment",
+      "gt": "medical therapy, supportive therapy",
+      "em": false,
+      "f1": 0.25,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "coronal plane",
+      "gt": "coronal plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "upper left lung",
+      "gt": "lower left lung",
+      "em": false,
+      "f1": 0.6667,
+      "type": "open"
+    },
+    {
+      "pred": "upper left lung",
+      "gt": "lower left lung",
+      "em": false,
+      "f1": 0.6667,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "1",
+      "gt": "1",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "promote blood flow",
+      "gt": "promote blood flow",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "inflammation, tuberculosis and other diseases",
+      "gt": "chest injury, lung disease, bullae",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "coronal plane",
+      "gt": "coronal plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "left lung",
+      "em": false,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "right lung, left",
+      "gt": "left lung",
+      "em": false,
+      "f1": 0.4,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "live healthy, enhance physical performance",
+      "gt": "quit smoking, enhance physical fitness",
+      "em": false,
+      "f1": 0.4,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "coronal plane",
+      "gt": "coronal plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right",
+      "gt": "left",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "lower left lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "promote blood flow",
+      "gt": "promote blood flow",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "medical treatment, surgery",
+      "gt": "medical therapy, supportive therapy",
+      "em": false,
+      "f1": 0.2857,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "upper right lung",
+      "em": false,
+      "f1": 0.3333,
+      "type": "open"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "upper right lung",
+      "em": false,
+      "f1": 0.3333,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "1",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "live healthy, enhance physical performance",
+      "gt": "pay attention to prevent cold and keep warm, enhance physical fitness",
+      "em": false,
+      "f1": 0.25,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right",
+      "gt": "right",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lower right lung",
+      "gt": "lower right lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "pleural effusion",
+      "gt": "pneumonia",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "promote blood flow",
+      "gt": "promote blood flow",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "live healthy, enhance physical performance",
+      "gt": "pay attention to prevent cold and keep warm, enhance physical fitness",
+      "em": false,
+      "f1": 0.25,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "both",
+      "gt": "left",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "lower left lung",
+      "gt": "lower left lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "infiltration",
+      "gt": "pulmonary infiltration",
+      "em": false,
+      "f1": 0.6667,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest tightness, fatigue",
+      "gt": "chest pain, cough, expectoration",
+      "em": false,
+      "f1": 0.2857,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "lower left lung",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "left lung, right",
+      "gt": "lower left lung",
+      "em": false,
+      "f1": 0.3333,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "pulmonary infection, lung tumor, tuberculosis and other diseases",
+      "gt": "inflammation, malignant tumor, trauma, etc",
+      "em": false,
+      "f1": 0.1538,
+      "type": "open"
+    },
+    {
+      "pred": "heart",
+      "gt": "heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "x-ray",
+      "gt": "x-ray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "coronal plane",
+      "gt": "coronal plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "center",
+      "gt": "center",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left lung",
+      "gt": "lower left lung",
+      "em": false,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "atelectasis",
+      "gt": "pleural effusion",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest tightness, dyspnea, chest pain",
+      "gt": "chest tightness, dyspnea, chest pain",
+      "em": true,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "center",
+      "gt": "center",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "temporal lobe",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "gray",
+      "gt": "gray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "0",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "much",
+      "gt": "much",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "center",
+      "gt": "center",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "white",
+      "gt": "white",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "0",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "control heartbeat and breathing",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "upper right",
+      "gt": "top",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "white",
+      "gt": "gray",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "cutting, chewing, maintaining facial contour and assisting pronunciation",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "neck",
+      "gt": "neck",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "irregular",
+      "gt": "oval",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "spinal cord",
+      "gt": "larynx",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "neck",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "top",
+      "gt": "under trachea",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "neck",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "black",
+      "gt": "black",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "irregular",
+      "gt": "irregular",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "gas delivery",
+      "gt": "gas delivery",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "spinal cord",
+      "gt": "trachea",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "neck",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "black gray",
+      "gt": "black hollow",
+      "em": false,
+      "f1": 0.5,
+      "type": "open"
+    },
+    {
+      "pred": "neck",
+      "gt": "neck",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "circular",
+      "gt": "irregular",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "gas delivery",
+      "gt": "gas delivery",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "esophagus",
+      "gt": "esophagus",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left",
+      "gt": "right",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain edema",
+      "gt": "brain edema, brain enhancing tumor",
+      "em": false,
+      "f1": 0.2857,
+      "type": "open"
+    },
+    {
+      "pred": "3",
+      "gt": "2",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain embryonic dysplasia, genetic factors, chemical factors",
+      "gt": "brain embryonic tissue dysplasia, genetic factors, chemical factors",
+      "em": false,
+      "f1": 0.9333,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left lobe",
+      "gt": "upper left lobe",
+      "em": false,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "white",
+      "gt": "white",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain embryonic dysplasia, genetic factors, chemical factors",
+      "gt": "brain embryonic tissue dysplasia, genetic factors, chemical factors",
+      "em": false,
+      "f1": 0.9333,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left",
+      "gt": "left",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain edema",
+      "gt": "brain edema, brain enhancing tumor, brain non-enhancing tumor",
+      "em": false,
+      "f1": 0.2,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "3",
+      "gt": "3",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "visual impairment, vomiting, tinnitus, increased intracranial pressure",
+      "gt": "visual impairment, vomiting, tinnitus, increased intracranial pressure",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lower right lobe",
+      "gt": "left lobe",
+      "em": false,
+      "f1": 0.4,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "3",
+      "gt": "1",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "medical treatment, surgery",
+      "gt": "pharmacotherapy, rehabilitation",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "upper left lobe",
+      "gt": "upper left lobe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "hypodense",
+      "gt": "hyperdense",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "3",
+      "gt": "1",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "medical treatment, rehabilitation",
+      "gt": "pharmacotherapy, rehabilitation",
+      "em": false,
+      "f1": 0.4,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain",
+      "gt": "head",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "lower right lobe",
+      "gt": "upper left lobe",
+      "em": false,
+      "f1": 0.3333,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "medical treatment, surgical treatment",
+      "gt": "pay attention to dietary hygiene, strengthen physical fitness and avoid brain trauma",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain",
+      "gt": "head",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "right lobe",
+      "gt": "upper right lobe",
+      "em": false,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain edema",
+      "gt": "brain edema, brain non-enhancing tumor",
+      "em": false,
+      "f1": 0.2857,
+      "type": "open"
+    },
+    {
+      "pred": "hypodense",
+      "gt": "hyperdense",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "visual impairment, vomiting, tinnitus, increased intracranial pressure",
+      "gt": "visual impairment, vomiting, tinnitus, increased intracranial pressure",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "right lobe",
+      "gt": "upper right lobe",
+      "em": false,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "medical treatment, surgical treatment",
+      "gt": "pay attention to dietary hygiene, strengthen physical fitness and avoid brain trauma",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "t1",
+      "gt": "t1",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right",
+      "gt": "right",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain edema",
+      "gt": "brain edema, brain non-enhancing tumor",
+      "em": false,
+      "f1": 0.2857,
+      "type": "open"
+    },
+    {
+      "pred": "none",
+      "gt": "none",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain edema, brain tumor",
+      "gt": "brain edema",
+      "em": false,
+      "f1": 0.3333,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lower right",
+      "gt": "lower right",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "t2",
+      "gt": "t1",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain",
+      "gt": "head",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "left lobe",
+      "gt": "upper right lobe",
+      "em": false,
+      "f1": 0.4,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "3",
+      "gt": "2",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "none",
+      "gt": "none",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "t1",
+      "gt": "t1",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "upper left lobe",
+      "gt": "left lobe",
+      "em": false,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain edema",
+      "gt": "brain edema, brain enhancing tumor, brain non-enhancing tumor",
+      "em": false,
+      "f1": 0.2,
+      "type": "open"
+    },
+    {
+      "pred": "hypodense",
+      "gt": "hyperdense",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "visual impairment, vomiting, tinnitus, increased intracranial pressure",
+      "gt": "visual impairment, vomiting, tinnitus, increased intracranial pressure",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "t1",
+      "gt": "t1",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left lobe",
+      "gt": "lower left lobe",
+      "em": false,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain embryonic tissue dysplasia, genetic factors, chemical factors",
+      "gt": "brain embryonic tissue dysplasia, genetic factors, chemical factors",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t1",
+      "gt": "t1",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left lobe",
+      "gt": "left lobe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain edema, brain tumor",
+      "gt": "brain edema, brain enhancing tumor, brain non-enhancing tumor",
+      "em": false,
+      "f1": 0.5,
+      "type": "open"
+    },
+    {
+      "pred": "t1",
+      "gt": "hyperdense",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "visual impairment, vomiting, tinnitus, increased intracranial pressure",
+      "gt": "visual impairment, vomiting, tinnitus, increased intracranial pressure",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left lobe",
+      "gt": "lower left lobe",
+      "em": false,
+      "f1": 0.8,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain edema",
+      "gt": "brain edema, brain enhancing tumor",
+      "em": false,
+      "f1": 0.2857,
+      "type": "open"
+    },
+    {
+      "pred": "white",
+      "gt": "white",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "3",
+      "gt": "2",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "medical treatment, surgical treatment",
+      "gt": "pay attention to dietary hygiene, strengthen physical fitness and avoid brain trauma",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left lobe",
+      "gt": "left lobe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain edema",
+      "gt": "brain edema, brain non-enhancing tumor",
+      "em": false,
+      "f1": 0.2857,
+      "type": "open"
+    },
+    {
+      "pred": "3",
+      "gt": "2",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "none",
+      "gt": "none",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "left lobe",
+      "gt": "left lobe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "none",
+      "gt": "none",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "none",
+      "gt": "none",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lower right lobe",
+      "gt": "lower left lobe",
+      "em": false,
+      "f1": 0.6667,
+      "type": "open"
+    },
+    {
+      "pred": "head",
+      "gt": "head",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain edema",
+      "gt": "brain edema",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "3",
+      "gt": "1",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "none",
+      "gt": "none",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "symmetrical to spine",
+      "gt": "symmetrical to bottom spine",
+      "em": false,
+      "f1": 0.8571,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "gray",
+      "gt": "gray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "right kidney",
+      "gt": "right kidney",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "2",
+      "gt": "6",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "much",
+      "gt": "much",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "spleen",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "kidney",
+      "gt": "kidney",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "upper right",
+      "gt": "upper right",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "2",
+      "gt": "2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "absorb nutrients, secrete enzymes",
+      "gt": "biotransformation, detoxification",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "chest",
+      "gt": "abdomen",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "colon",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "0",
+      "gt": "0",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "breathe",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "small bowel, colon",
+      "gt": "stomach, colon",
+      "em": false,
+      "f1": 0.4,
+      "type": "open"
+    },
+    {
+      "pred": "kidney",
+      "gt": "kidney",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "small bowel",
+      "gt": "small bowel",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "colon",
+      "gt": "kidney",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "0",
+      "gt": "0",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "absorb nutrients, secrete enzymes",
+      "gt": "absorb nutrients, secrete enzymes, digest food",
+      "em": false,
+      "f1": 0.6,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "symmetrical to spine",
+      "gt": "symmetrical to bottom spine",
+      "em": false,
+      "f1": 0.8571,
+      "type": "open"
+    },
+    {
+      "pred": "right kidney",
+      "gt": "small bowel",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "gray",
+      "gt": "gray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "2",
+      "gt": "5",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "circular",
+      "gt": "circular",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "absorb nutrients, secrete enzymes",
+      "gt": "absorb nutrients, secrete enzymes, digest food",
+      "em": false,
+      "f1": 0.6,
+      "type": "open"
+    },
+    {
+      "pred": "spinal cord",
+      "gt": "spinal cord",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "top",
+      "gt": "left",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "gray",
+      "gt": "gray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "kidney",
+      "gt": "spleen",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "2",
+      "gt": "0",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "irregular",
+      "gt": "oval",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "absorb nutrients, secrete enzymes and secrete enzymes",
+      "gt": "absorb nutrients, secrete enzymes, digest food",
+      "em": false,
+      "f1": 0.4615,
+      "type": "open"
+    },
+    {
+      "pred": "spinal cord",
+      "gt": "spinal cord",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "upper right",
+      "gt": "upper right",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "abdomen",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "spleen",
+      "gt": "liver",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "2",
+      "gt": "0",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "circular",
+      "gt": "circular",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "improve body's immunity",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "spleen",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "top",
+      "gt": "center",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "gray",
+      "gt": "gray",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "0",
+      "gt": "1",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "much",
+      "gt": "much",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain edema",
+      "gt": "brain tumor, brain edema",
+      "em": false,
+      "f1": 0.6667,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "right lobe",
+      "gt": "lower left",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "abdomen",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left",
+      "gt": "top",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "esophagus",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "0",
+      "gt": "2",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "much",
+      "gt": "much",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "esophagus",
+      "gt": "esophagus",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "transverse plane",
+      "gt": "transverse plane",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "left lung",
+      "gt": "right lung",
+      "em": false,
+      "f1": 0.5,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "gray",
+      "gt": "black",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "esophagus",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "2",
+      "gt": "4",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "promote blood flow",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "pelvis",
+      "gt": "pelvic cavity",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "bottom",
+      "gt": "bottom",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "bladder",
+      "gt": "pelvic cavity",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "bladder",
+      "gt": "rectum",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "2",
+      "gt": "0",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "store feces, excrete feces",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "rectum, colon",
+      "gt": "rectum",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "bladder",
+      "gt": "pelvic cavity",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "bottom",
+      "gt": "bottom",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "bladder",
+      "gt": "pelvic cavity",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "bladder",
+      "gt": "bladder",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "breathe",
+      "gt": "store urine",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "rectum, colon",
+      "gt": "rectum",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "pelvic cavity",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "bladder",
+      "gt": "bladder",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "pelvic cavity",
+      "gt": "pelvic cavity",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "small bowel",
+      "gt": "small bowel",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "breathe",
+      "gt": "digest food, absorb water, excrete body waste",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "small bowel",
+      "gt": "pelvic cavity",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "colon",
+      "gt": "colon",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "breathe",
+      "gt": "absorb nutrients, secrete enzymes, digest food",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "pelvic cavity",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "top",
+      "gt": "upper left",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "pelvic cavity",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "absorb nutrients, secrete enzymes",
+      "gt": "digest food, absorb water, excrete body waste",
+      "em": false,
+      "f1": 0.1818,
+      "type": "open"
+    },
+    {
+      "pred": "small bowel, colon",
+      "gt": "colon, small bowel",
+      "em": false,
+      "f1": 0.3333,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain edema",
+      "gt": "none",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "mri",
+      "gt": "mri",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "t2",
+      "gt": "t2",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "brain",
+      "gt": "brain",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "brain edema",
+      "gt": "none",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung cancer",
+      "gt": "none",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "yes",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "abdomen",
+      "gt": "chest",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "liver",
+      "gt": "liver",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "chest",
+      "gt": "chest",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung, heart",
+      "gt": "lung, heart",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "yes",
+      "gt": "no",
+      "em": false,
+      "f1": 0.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "yes",
+      "gt": "yes",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "lung",
+      "gt": "lung",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "ct",
+      "gt": "ct",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "neck",
+      "gt": "chest",
+      "em": false,
+      "f1": 0.0,
+      "type": "open"
+    },
+    {
+      "pred": "spinal cord",
+      "gt": "spinal cord",
+      "em": true,
+      "f1": 1.0,
+      "type": "open"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    },
+    {
+      "pred": "no",
+      "gt": "no",
+      "em": true,
+      "f1": 1.0,
+      "type": "yes/no"
+    }
+  ]
+}
